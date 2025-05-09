@@ -1,0 +1,429 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+
+    --Yellow-100: hsla(33, 71%, 84%, 0.798);
+    --Yellow-500: hsl(39, 91%, 62%);
+
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--White);
+}
+
+.container {
+    margin: 100px 50px 10px 40px;
+    /* border: 1px solid; */
+    background-color: rgb(230, 230, 230);
+}
+
+/* BASE CARD STYLE */
+.card {
+    margin-left: 40px;
+    margin-top: 35px;
+    max-width: 330px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* CARD ONE */
+.card-one {
+    background-color: var(--Purple-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-one strong {
+    color: var(--Yellow-500);
+}
+
+.card-one h1 {
+    text-align: center;
+    font-size: 2.9rem;
+    color: var(--White);
+    font-weight: 400;
+    width: 250px;
+    margin-top: 35px;
+    line-height: 2.5rem;
+}
+
+.card-one img {
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.card-one p {
+    margin-bottom: 40px;
+    color: var(--White);
+}
+
+/* CARD TWO */
+.card-two img {
+    width: 320px;
+}
+
+.card-two p {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+/* CARD THREE */
+.card-three {
+    position: relative;
+    height: 210px;
+    background-color: var(--Yellow-500);
+}
+
+.card-three img {
+    width: 200px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.card-three p {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+/* CARD FOUR */
+.card-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Purple-100);
+}
+
+.card-four img {
+    width: 290px;
+    margin-top: 15px;
+}
+
+.card-four p {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 1rem;
+    margin: 20px 40px 30px 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* CARD FIVE */
+.card-five {
+    background-color: var(--Purple-500);
+}
+
+.card-five img {
+    width: 230px;
+    margin: 20px 0 30px 50px;
+}
+
+.card-five p {
+    color: var(--White);
+    width: 220px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    line-height: 1.4rem;
+    padding-bottom: 25px;
+}
+
+/* CARD SIX */
+.card-six {
+    background-color: var(--White);
+}
+
+.card-six img {
+    width: 200px;
+    margin: 20px 0 20px 20px;
+}
+
+.card-six span {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+.card-six p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+/* CARD SEVEN */
+.card-seven {
+    background-color: var(--Yellow-100);
+    padding: 15px;
+}
+
+.card-seven img {
+    width: 150px;
+    margin: 0 30px 15px;
+}
+
+.card-seven p {
+    font-size: 1.7rem;
+    margin: 25px 20px;
+    font-weight: 500;
+    line-height: 1.4rem;
+    width: 300px;
+}
+
+.card-seven strong {
+    color: var(--Purple-500);
+    font-style: italic;
+}
+
+/* CARD EIGHT */
+.card-eight {
+    background-color: var(--Yellow-500);
+}
+
+.card-eight img {
+    width: 250px;
+    padding: 0 20px 20px;
+}
+
+.card-eight p {
+    font-size: 1.8rem;
+    padding: 20px;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.attribution {
+    font-size: 18px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto;
+        /* Ajusta las filas a 'auto' para que se adapten al contenido */
+        gap: 24px;
+        /* Aumenta el gap para más espacio entre las tarjetas */
+        margin: 100px auto 10px auto;
+        /* Ajusta los márgenes para centrar mejor el contenido */
+        width: 1000px;
+    }
+
+    .card {
+        margin-left: 0;
+        /* Elimina el margen izquierdo individual de las tarjetas en el grid */
+        margin-top: 0;
+        /* Elimina el margen superior individual de las tarjetas en el grid */
+        max-width: none;
+        /* Permite que las tarjetas se expandan completamente en su celda del grid */
+        width: 100%;
+        /* Asegura que las tarjetas ocupen el ancho de su celda */
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .card-one {
+        grid-column: 2 /5;
+        /* Ocupa las columnas 1 y 2 */
+        grid-row: 1 / 2;
+        width: 66%;
+        /* Ocupa la primera fila */
+
+    }
+
+    .card-one h1 {
+        font-size: 3.4rem;
+        width: 80%;
+        line-height: 3.5rem;
+        padding-top: 20px;
+
+    }
+
+    .card-two {
+        grid-column: 2 / 3;
+        /* Ocupa la tercera columna */
+        grid-row: 2 / 3;
+        /* Ocupa la primera fila */
+
+    }
+
+    .card-two p {
+        line-height: 1.8rem;
+        font-size: 1.9rem;
+    }
+
+    .card-two img {
+        width: 315px;
+    }
+
+    .card-three {
+        grid-column: 3 / 4;
+        /* Ocupa la cuarta columna */
+        grid-row: 2 / 3;
+        /* Ocupa las filas 1 y 2 */
+    }
+
+    .card-three p {
+        padding: 5px;
+        padding-left: 0;
+        padding-right: 30px;
+
+    }
+
+    .card-three img {
+        margin-top: 5px;
+    }
+
+    .card-four {
+        grid-column: 4 / 5;
+        /* Ocupa la primera columna */
+        grid-row: 1 / 3;
+        /* Ocupa la segunda fila */
+    }
+
+    .card-four p {
+        padding: 25px;
+        padding-right: 40px;
+        padding-left: 20px;
+        padding-bottom: 0;
+    }
+
+    .card-four img {
+        margin-left: 140px;
+        width: 330px;
+    }
+
+    .description {
+        width: 180px;
+        text-align: left;
+        margin-left: 50px;
+
+
+
+    }
+
+
+    .card-five {
+        grid-column: 3 / 5;
+        /* Ocupa las columnas 2 y 3 */
+        grid-row: 3 / 4;
+        /* Ocupa la segunda fila */
+    }
+
+    .card-five {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-five p {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 1.8rem;
+        padding-left: 0px;
+        padding-top: 25px;
+        margin-right: 7px;
+
+    }
+
+    .card-five img {
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+
+    .card-six {
+        grid-column: 2 / 3;
+        /* Ocupa la cuarta columna */
+        grid-row: 3 / 4;
+        /* Ocupa la tercera fila */
+        border: 1px solid;
+        padding-top: 20px;
+
+    }
+
+    .card-six img {
+        width: 150px;
+        padding-top: 20px;
+
+    }
+
+    .card-six span {
+        margin-top: 300px;
+        font-size: 3.5rem;
+    }
+
+    .card-seven {
+        grid-column: 1 / 2;
+        /* Ocupa las columnas 1 y 2 */
+        grid-row: 1 / 3;
+        /* Ocupa la tercera fila */
+        height: 380px;
+    }
+
+    .card-seven p {
+        width: 200px;
+        line-height: 1.6rem;
+        padding-top: 40px;
+        font-size: 2rem;
+    }
+
+    .card-seven img {
+        width: 170px;
+        margin-left: 10px;
+    }
+
+    .card-eight {
+        grid-column: 1 / 2;
+        /* Ocupa las columnas 3 y 4 */
+        grid-row: 2 / 4;
+        margin-top: 70px;
+        height: 450px;
+    }
+    .card-eight p{
+        width: 200px;
+        padding-bottom: 60px;
+        padding-top: 30px;
+        font-size: 2.1rem;
+
+    }
+    .card-eight img{
+        width: 240px;
+    }
+
+
+}
