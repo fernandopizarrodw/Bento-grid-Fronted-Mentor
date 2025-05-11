@@ -1,27 +1,33 @@
 # Frontend Mentor - Bento Grid
 
-This is a solution to the [Bento Grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Bento Grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj).
 
-## 🚀 Live Site  
-👉 [Live Demo](https://fernandopizarrodw.github.io/Bento-grid-Fronted-Mentor/)
+## Overview
 
-## 🧠 What I Learned  
-This project was a great opportunity to get hands-on experience with **CSS Grid**. I practiced building a responsive layout that adjusts to different screen sizes using **media queries** and **grid areas**.
+A responsive grid layout built using CSS Grid and media queries. Each grid item adjusts dynamically for different screen sizes.
 
-## ⚙️ Built With  
-- Semantic HTML5 markup  
-- CSS custom properties  
-- CSS Grid  
-- Media Queries  
-- Mobile-first workflow  
+### Screenshot
 
-## 🔧 Challenge  
-One of the main challenges was resizing the inner content of each grid box when switching from mobile to desktop layout. It helped me better understand how grid tracks and items adapt across breakpoints.
+![Desktop Screenshot](./assets/images/screenshot-desktop.jpg.png)
+![Mobile Screenshot](./assets/images/screenshot-mobile.jpg.png)
 
-## 📂 Useful Links  
-- [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj)  
-- [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-layout-with-css-grid-and-media-queries-2AFBqn4vbc)  
-- [Source Code on GitHub](https://github.com/fernandopizarrodw/Bento-grid-Fronted-Mentor)
+### Links
 
-## 📌 Status  
-✅ Completed
+- [Solution](https://www.frontendmentor.io/solutions/responsive-layout-with-css-grid-and-media-queries-2AFBqn4vbc)
+- [Live Site](https://fernandopizarrodw.github.io/Bento-grid-Fronted-Mentor/)
+
+## Built With
+
+- HTML5
+- CSS3
+- CSS Grid
+- Mobile-first workflow
+
+## What I Learned
+
+This challenge helped me understand how to use CSS Grid for layout and how to resize grid items when transitioning to desktop view.
+
+## Author
+
+- GitHub - [@fernandopizarrodw](https://github.com/fernandopizarrodw)
+- Frontend Mentor - [@fernandopizarrodw](https://www.frontendmentor.io/profile/fernandopizarrodw)
